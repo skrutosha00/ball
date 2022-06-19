@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="initial-scale=1.0, width=device-width, viewport-fit=cover"
+    />
+    <link rel="shortcut icon" href="../png/icon.png" />
+    <link rel="stylesheet" href="../styles/common_style.css" />
+    <link rel="stylesheet" href="../styles/game.css" />
+    <title>Ball Action</title>
+  </head>
+  <body>
+    <div class="wrapper hidden">
+      <div class="warning">
+        <div class="warning_text"></div>
+        <div class="button block again">Play again</div>
+      </div>
+
+      <div class="nav">
+        <div class="shoots">
+          <div>Shoots left</div>
+          <div class="left_cont">
+            <div class="left">10</div>
+            <img src="../png/ball_nav.png" alt="ball" />
+          </div>
+        </div>
+        <div class="ball_cont"></div>
+        <div class="balance_field"></div>
+      </div>
+
+      <a href="./main.html" class="button block">Menu</a>
+
+      <div class="bonus_cont">
+        <img src="../png/bonus.png" alt="bonus" />
+        <div class="right">
+          <div class="text">without a miss</div>
+          <div class="bonus_amount"></div>
+        </div>
+      </div>
+
+      <div class="shoot_control">
+        <div class="left">
+          <div class="button block shoot">Shoot</div>
+          <div class="button block dark shoot_all">Shoot All</div>
+        </div>
+        <div class="border block">
+          <div class="inner_border"></div>
+          <div class="item"></div>
+        </div>
+      </div>
+
+      <div class="basket_cont">
+        <img src="../png/shield.png" alt="shield" class="shield" />
+        <img src="../png/basket.png" alt="basket" class="basket" />
+        <img src="../png/post.png" alt="post" class="post" />
+        <img src="../png/ball.png" alt="ball" class="ball" />
+      </div>
+
+      <div class="control">
+        <div class="minus block">-</div>
+        <div class="bet_amount button block">0</div>
+        <div class="plus block">+</div>
+        <div class="stake button block">
+          <span>0</span>
+          <div>Stake</div>
+        </div>
+        <div class="bet_button block">Bet</div>
+      </div>
+    </div>
+    <script src="../scripts/nav.js" type="module"></script>
+    <script src="../scripts/game.js" type="module"></script>
+  </body>
+</html>

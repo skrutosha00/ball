@@ -1,0 +1,36 @@
+.button {
+  position: absolute;
+
+  width: 25%;
+  height: 20%;
+  max-height: 100px;
+
+  font-weight: 700;
+  font-size: 2vw;
+  text-shadow: 0px 2.66706px 8.00118px #f3fffd;
+
+  background-image: url("../png/block.png");
+  background-size: 100% 100%;
+}
+
+.game {
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+.shop {
+  bottom: 20%;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+@media screen and (min-height: 768px) {
+  .game {
+    top: 38%;
+  }
+
+  .shop {
+    bottom: 30%;
+  }
+}
