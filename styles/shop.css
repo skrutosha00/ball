@@ -85,6 +85,16 @@ a {
 
   background-image: url("../png/block.png");
   background-size: 100% 100%;
+
+  transition: text-shadow 0.5s ease;
+}
+
+.deal {
+  text-shadow: 0px 2.66706px 8.00118px rgb(6, 218, 6);
+}
+
+.not_deal {
+  text-shadow: 0px 2.66706px 8.00118px red;
 }
 
 .button img {
@@ -129,18 +139,18 @@ a {
 }
 
 @media screen and (min-height: 800px) {
-    .shop {
-      height: 280px;
-      margin-top: 60px;
-    }
-  
-    .item_cont.active {
-      width: 280px;
-      height: 280px;
-    }
-  
-    .item_cont {
-      width: 240px;
-      height: 240px;
-    }
+  .shop {
+    height: 280px;
+    margin-top: 60px;
   }
+
+  .item_cont.active {
+    width: 280px;
+    height: 280px;
+  }
+
+  .item_cont {
+    width: 240px;
+    height: 240px;
+  }
+}

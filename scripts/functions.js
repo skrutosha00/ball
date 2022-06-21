@@ -1,19 +1,8 @@
-function animate(selector) {
+function animateOnce(selector, animClass = 'anim') {
     for (let node of document.querySelectorAll(selector)) {
-        setInterval(() => {
-            node.classList.add('anim')
-            setTimeout(() => {
-                node.classList.remove('anim')
-            }, 500);
-        }, 2500);
-    }
-}
-
-function animateOnce(selector) {
-    for (let node of document.querySelectorAll(selector)) {
-        node.classList.add('anim')
+        node.classList.add(animClass)
         setTimeout(() => {
-            node.classList.remove('anim')
+            node.classList.remove(animClass)
         }, 500);
     }
 }
@@ -55,4 +44,4 @@ function randInt(min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
-export { animate, animateOnce, shuffle, changeBalance, randInt, setBalanceField, randElem }
+export { animateOnce, shuffle, changeBalance, randInt, setBalanceField, randElem }

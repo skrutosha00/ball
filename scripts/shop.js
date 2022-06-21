@@ -38,6 +38,7 @@ button.onclick = () => {
     if (button.innerHTML != 'Selected') {
         if (Number(balance.innerHTML) >= priceData[active]) {
             changeBalance(-priceData[active])
+            animateOnce('.button_cont > div', 'deal')
 
             if (active == 'bonus') {
                 localStorage.setItem('bonus_ball', Number(localStorage.getItem('bonus_ball')) + 1)
@@ -48,6 +49,7 @@ button.onclick = () => {
             }
         } else {
             animateOnce('.balance')
+            animateOnce('.button_cont > div', 'not_deal')
         }
     }
 }
